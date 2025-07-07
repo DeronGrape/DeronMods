@@ -94,20 +94,27 @@ h1 {
   position: absolute;
   right: 10px;
   bottom: 10px;
+  width: 36px;
+  height: 36px;
   background: #007acc;
   border: none;
-  color: white;
-  padding: 6px 12px;
-  font-size: 0.85rem;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: opacity 0.3s ease;
   user-select: none;
+  padding: 0;
 }
 
 .btn-download:hover {
   opacity: 1;
+}
+
+.btn-download svg {
+  display: block;
 }
 
 /* При натисканні на кнопку — не відкриває сторінку моду (event.stopPropagation у HTML) */

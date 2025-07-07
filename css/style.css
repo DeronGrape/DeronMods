@@ -1,10 +1,10 @@
-/* Базові стилі */
+/* Темна тема */
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: #fafafa;
-  color: #222;
+  background: #121212;
+  color: #e0e0e0;
   margin: 0;
   padding: 0;
 }
@@ -12,19 +12,20 @@ body {
 header, footer {
   text-align: center;
   padding: 1.5rem 1rem;
-  background: #f5f5f5;
-  color: #555;
+  background: #1e1e1e;
+  color: #bbb;
 }
 
 h1 {
   margin: 0;
   font-weight: 600;
+  color: #fff;
 }
 
 .intro {
   margin-top: 0.25rem;
   font-size: 1rem;
-  color: #666;
+  color: #aaa;
 }
 
 .container {
@@ -41,17 +42,17 @@ h1 {
   gap: 1.25rem;
 }
 
-/* Картка моду (лінк, щоб весь блок кликався) */
+/* Картка моду (лінк) */
 
 .mod-card {
   display: flex;
   flex-direction: column;
-  background: white;
-  border: 1px solid #ddd;
+  background: #222;
+  border: 1px solid #333;
   border-radius: 10px;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.7);
   position: relative;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -60,7 +61,7 @@ h1 {
 
 .mod-card:hover {
   transform: scale(1.03);
-  box-shadow: 0 5px 15px rgb(0 0 0 / 0.15);
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.9);
   z-index: 1;
 }
 
@@ -70,7 +71,7 @@ h1 {
   width: 100%;
   height: 140px;
   object-fit: cover;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #444;
   user-select: none;
 }
 
@@ -80,15 +81,16 @@ h1 {
   margin: 0.75rem 1rem 0.25rem;
   font-weight: 600;
   font-size: 1.15rem;
+  color: #eee;
 }
 
 .mod-card p {
   margin: 0 1rem 2.5rem;
-  color: #555;
+  color: #ccc;
   font-size: 0.95rem;
 }
 
-/* Кнопка завантажити - маленька, праворуч знизу */
+/* Кнопка завантажити */
 
 .btn-download {
   position: absolute;
@@ -107,6 +109,7 @@ h1 {
   transition: opacity 0.3s ease;
   user-select: none;
   padding: 0;
+  z-index: 10;
 }
 
 .btn-download:hover {
@@ -117,5 +120,8 @@ h1 {
   display: block;
 }
 
-/* При натисканні на кнопку — не відкриває сторінку моду (event.stopPropagation у HTML) */
-
+footer p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
